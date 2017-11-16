@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Demo extends Model
 {
-    //
+    protected $fillable = [
+    	'week_no'
+    ];
 }

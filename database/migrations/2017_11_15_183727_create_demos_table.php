@@ -15,7 +15,7 @@ class CreateDemosTable extends Migration
     {
         Schema::create('demos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('week_no')->nullable();
+            $table->string('wk')->nullable();
             $table->string('jersey_number')->nullable();
             $table->string('hours_of_sleep')->nullable();
             $table->string('how_many_naps')->nullable();
@@ -49,6 +49,7 @@ class CreateDemosTable extends Migration
             $table->string('relationship_teammates')->nullable();
             $table->string('relationship_staff')->nullable();
             $table->string('relationships_personal_life')->nullable();
+
         });
     }
 

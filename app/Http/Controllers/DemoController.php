@@ -33,7 +33,9 @@ class DemoController extends Controller
 
                     foreach ($data as $key => $value) {
                         $insert[] = [
-                            'week_no' => $value->Week_No,
+
+                            'wk' => $value->wk,
+                            
                             'jersey_number' => $value->jersey_number,
                             'hours_of_sleep' => $value->hours_of_sleep,
                             'how_many_naps' => $value->how_many_naps,
@@ -67,6 +69,7 @@ class DemoController extends Controller
                             'relationship_teammates' => $value->relationship_teammates,
                             'relationship_staff' => $value->relationship_staff,
                             'relationships_personal_life' => $value->relationships_personal_life
+                            
                         ];
                     }
 

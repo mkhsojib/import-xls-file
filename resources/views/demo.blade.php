@@ -113,13 +113,14 @@
                                 <th>Relationship_teammates</th>
                                 <th>Relationship_staff</th>
                                 <th>Relationships_personal_life</th>
+                                
                             </tr>
                             </thead>
                             <tbody>
                                 @foreach($demos as $key => $demo)
                                     <tr>
                                         <td>{{ ++$key }}</td>
-                                        <td>{{ $demo->week_no }}</td>
+                                         <td>{{ $demo->wk }}</td>
                                         <td>{{ $demo->jersey_number }}</td>
                                         <td>{{ $demo->hours_of_sleep }}</td>
                                         <td>{{ $demo->how_many_naps }}</td>
@@ -153,6 +154,7 @@
                                         <td>{{ $demo->relationship_teammates }}</td>
                                         <td>{{ $demo->relationship_staff }}</td>
                                         <td>{{ $demo->relationships_personal_life }}</td>
+                                       
                                     </tr>
                                 @endforeach
                             </tbody>
